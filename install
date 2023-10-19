@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# Setup the local environment for the project
+# Requires Docker and NPM to be available. 
+
+# Check if Docker is installed
+if ! [ -x "$(command -v docker)" ]; then
+  echo "Docker is not installed. Please install Docker and try again."
+  exit 1
+fi
+
+# Install Composer deps
+docker run --rm --interactive --tty \
+ --volume $(pwd):/app \
+ composer install
+
+# Install NPM deps
+npm ci 
+
+npm run env start

@@ -1,0 +1,14 @@
+version: 2
+updates: 
+  - package-ecosystem: "npm"
+    directory: "/"
+    commit-message:
+      prefix: "[DEPS]"
+    schedule:
+      interval: "daily"
+  - package-ecosystem: "composer"
+    directory: "/"
+    commit-message:
+      prefix: "[DEPS]"
+    schedule:
+      interval: "daily"

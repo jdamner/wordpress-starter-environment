@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "env": "wp-env",
+    "composer": "wp-env start && wp-env cli composer"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^8.10.0",
+    "@wordpress/scripts": "^26.15.0"
+  }
+}

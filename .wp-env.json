@@ -1,0 +1,13 @@
+{
+	"core": "./vendor/roots/wordpress-no-content",
+	"phpVersion": "8.1",
+	"lifecycleScripts": {
+		"beforeStart": "composer install"
+	},
+	"mappings": {
+		"./wp-content": "./wp-content",
+		"./composer.json": "./composer.json",
+		"./composer.lock": "./composer.lock",
+		"./bin": "./bin"
+	}
+}

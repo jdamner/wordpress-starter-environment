@@ -1,0 +1,11 @@
+{
+    "require-dev": {
+        "automattic/vipwpcs": "^3.0",
+        "roots/wordpress-no-content": "^6.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}

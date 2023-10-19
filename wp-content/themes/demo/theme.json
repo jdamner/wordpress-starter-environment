@@ -1,0 +1,5 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.3/theme.json",
+	"title": "Test Theme",
+	"version": 2
+}
